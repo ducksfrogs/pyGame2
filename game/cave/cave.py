@@ -6,7 +6,7 @@ from pygame.locals import QUIT, Rect, KEYDOWN, K_SPACE
 
 pygame.init()
 pygame.key.set_repeat(5,5)
-SURFACE = pygame.display.set_mode((600, 800))
+SURFACE = pygame.display.set_mode((800, 600))
 FPSCLOCK = pygame.time.Clock()
 
 
@@ -25,7 +25,7 @@ def main():
     holes = []
     for xpos in range(walls):
         holes.append(Rect(xpos*10, 100,10,400))
-        game_over = False
+    game_over = False
 
     while True:
         is_space_down = False
